@@ -12,15 +12,16 @@ style {
     color:#70b;
     font-size:3em;
   }
-  .example-button {
+  #example-button {
     font-size:1em;
     padding:0.5em;
   }
 }
-
-<div.count>
-  ${state.count}
+<div>
+  <div.count>
+    ${state.count}
+  </div>
+  <button id="example-button" on-click('increment')>
+    Click me!
+  </button>
 </div>
-<button.example-button on-click('increment')>
-  Click me!
-</button>

@@ -11,11 +11,18 @@
     "eslint": "^4.2.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.2",
+    "jest": "^22.4.3",
     "prettier": "^1.5.2"
   },
   "dependencies": {
     "marko": "^4.2.4",
+    "marko-jest": "^3.0.0",
     "marko-starter": "^1.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.marko$": "<rootDir>/node_modules/marko-jest/preprocessor.js"
+    }
   },
   "scripts": {
     "start": "marko-starter server",
